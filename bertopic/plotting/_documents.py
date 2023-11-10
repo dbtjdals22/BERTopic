@@ -197,14 +197,14 @@ def visualize_documents(topic_model,
     # Add grid in a 'plus' shape
     x_range = (df.x.min() - abs((df.x.min()) * .15), df.x.max() + abs((df.x.max()) * .15))
     y_range = (df.y.min() - abs((df.y.min()) * .15), df.y.max() + abs((df.y.max()) * .15))
-    fig.add_shape(type="line",
-                  x0=sum(x_range) / 2, y0=y_range[0], x1=sum(x_range) / 2, y1=y_range[1],
-                  line=dict(color="#CFD8DC", width=2))
-    fig.add_shape(type="line",
-                  x0=x_range[0], y0=sum(y_range) / 2, x1=x_range[1], y1=sum(y_range) / 2,
-                  line=dict(color="#9E9E9E", width=2))
-    fig.add_annotation(x=x_range[0], y=sum(y_range) / 2, text="D1", showarrow=False, yshift=10)
-    fig.add_annotation(y=y_range[1], x=sum(x_range) / 2, text="D2", showarrow=False, xshift=10)
+    #fig.add_shape(type="line",
+    #              x0=sum(x_range) / 2, y0=y_range[0], x1=sum(x_range) / 2, y1=y_range[1],
+    #              line=dict(color="#CFD8DC", width=2))
+    #fig.add_shape(type="line",
+    #              x0=x_range[0], y0=sum(y_range) / 2, x1=x_range[1], y1=sum(y_range) / 2,
+    #              line=dict(color="#9E9E9E", width=2))
+    #fig.add_annotation(x=x_range[0], y=sum(y_range) / 2, text="D1", showarrow=False, yshift=10)
+    #fig.add_annotation(y=y_range[1], x=sum(x_range) / 2, text="D2", showarrow=False, xshift=10)
 
     # Stylize layout
     fig.update_layout(
